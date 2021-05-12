@@ -8,6 +8,31 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--white);
+}
+
+.btn {
+    padding: 12px 31px;
+    background-color: transparent;
+    border: solid 4px var(--yellow);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--yellow);
+    font-weight: bold;
+    letter-spacing: .1em;
+    transition: ease-in-out 0.3s;
+}
+
+.btn:hover {
+    border: solid 4px var(--white);
+    color: var(--white);
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -27,6 +52,7 @@ body {
 }
 
 .header_menu ul li a {
+    transition: ease-in-out 0.3s;
     color: var(--black);
     font-weight: bold;
     text-transform: uppercase;
@@ -39,3 +65,50 @@ body {
 .header_menu ul li a:hover {
     color: var(--white);
 }
+
+.introducao {
+    width: 100%;
+    height: 380px;
+    background: url("../img/bg.jpg") no-repeat center;
+    background-size: cover;
+    margin-top: 96px;
+    text-align: center;
+}
+
+.introducao h1 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    margin-top: 80px;
+}
+
+.introducao .quote-externo {
+    max-width: 262px;
+    margin: 12px auto;
+    font-style: italic;
+}
+
+.introducao .quote-externo p::before, .introducao .quote-externo p::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--white);
+    margin: 14.5px auto;
+}
+
+.introducao .quote-externo cite {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: .1em;
+    font-style: normal;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
