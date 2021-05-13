@@ -168,17 +168,36 @@ h2::after, h3::after {
     line-height: 20px;
 }
 
-.produtos .call-action {
+.call-action {
     text-align: center;
     clear: both;
 }
 
-.produtos .call-action p {
+.call-action p {
     margin: 20px 0 10px 0;
+    padding: 10px 20px 20px 20px;
+    line-height: 20px;
 }
 
-.produtos .call-action .btn{
+.call-action .btn{
     padding: 12px 38px;
 }
 
+.portfolio {
+    padding: 30px 0;
+    width: 100%;
+    background-color: var(--black);
+}
+
+.portfolio h2 {
+    color: var(--yellow);
+    margin-bottom: 20px;
+}
+.portfolio h2::after {
+    background-color: var(--yellow);
+}
+
+.portfolio img:last-child {
+    margin-top: 20px;
+}
 
