@@ -52,8 +52,13 @@ h2::after, h3::after {
 }
 
 .btn:hover {
-    border: solid 4px var(--white);
+    border-color: var(--white);
     color: var(--white);
+}
+
+.btn.btn-preto:hover {
+    border-color: var(--black);
+    color: var(--black);
 }
 
 .header {
@@ -139,10 +144,10 @@ h2::after, h3::after {
     margin: 60px 0;
 }
 
-.produtos .img-produto {
-    background: url("../img/produtos/passeio.svg") no-repeat center var(--black);
-    width: 300px;
-    height: 200px;
+.produtos .imagem-produto{
+    background-color: var(--black);
+    padding: 20px;
+    text-align: center;
 }
 
 .produtos .descricao-produto {
@@ -163,15 +168,16 @@ h2::after, h3::after {
     line-height: 20px;
 }
 
-.produtos .mais-produtos {
+.produtos .call-action {
     text-align: center;
+    clear: both;
 }
 
-.produtos .mais-produtos p {
-    margin: 35px 0 10px 0;
+.produtos .call-action p {
+    margin: 20px 0 10px 0;
 }
 
-.produtos .mais-produtos .btn{
+.produtos .call-action .btn{
     padding: 12px 38px;
 }
 
