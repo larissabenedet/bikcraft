@@ -1,2 +1,2 @@
 # Bikcraft
-site em desenvolvimento conforme as aulas do curso de web design da Origamid
+Site em desenvolvimento conforme as aulas do curso de Web Design da Origamid 🤓

@@ -8,11 +8,34 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    transition: ease-in-out 0.3s;
+}
+
 p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
     line-height: 20px;
     color: var(--white);
+}
+
+h2, h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2::after, h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--black);
+    margin: 5px auto;
 }
 
 .btn {
@@ -39,6 +62,7 @@ p {
     width: 100%;
     background-color: var(--yellow);
     padding: 15px 0;
+    z-index: 200;
 }
 
 .header_menu {
@@ -52,7 +76,6 @@ p {
 }
 
 .header_menu ul li a {
-    transition: ease-in-out 0.3s;
     color: var(--black);
     font-weight: bold;
     text-transform: uppercase;
@@ -111,4 +134,45 @@ p {
     text-transform: uppercase;
     margin-bottom: 50px;
 }
+
+.produtos {
+    margin: 60px 0;
+}
+
+.produtos .img-produto {
+    background: url("../img/produtos/passeio.svg") no-repeat center var(--black);
+    width: 300px;
+    height: 200px;
+}
+
+.produtos .descricao-produto {
+    text-align: center;
+    background-color: var(--yellow);
+}
+
+.produtos .descricao-produto h3 {
+    padding: 15px 25px 0 25px;
+    margin-bottom: 0;
+    font-size: 18px;
+    letter-spacing: normal;
+}
+
+.produtos p {
+    color: var(--black);
+    padding: 10px 20px 20px 20px;
+    line-height: 20px;
+}
+
+.produtos .mais-produtos {
+    text-align: center;
+}
+
+.produtos .mais-produtos p {
+    margin: 35px 0 10px 0;
+}
+
+.produtos .mais-produtos .btn{
+    padding: 12px 38px;
+}
+
 
