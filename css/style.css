@@ -38,6 +38,16 @@ h2::after, h3::after {
     margin: 5px auto;
 }
 
+
+section:not(.introducao) {
+    padding: 60px 0;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
 .btn {
     padding: 12px 31px;
     background-color: transparent;
@@ -49,6 +59,7 @@ h2::after, h3::after {
     font-weight: bold;
     letter-spacing: .1em;
     transition: ease-in-out 0.3s;
+    display: inline-block;
 }
 
 .btn:hover {
@@ -99,7 +110,7 @@ h2::after, h3::after {
     height: 380px;
     background: url("../img/bg.jpg") no-repeat center;
     background-size: cover;
-    margin-top: 96px;
+    margin-top: 92px;
     text-align: center;
 }
 
@@ -137,11 +148,7 @@ h2::after, h3::after {
     font-style: normal;
     color: var(--white);
     text-transform: uppercase;
-    margin-bottom: 50px;
-}
-
-.produtos {
-    margin: 60px 0;
+    margin-bottom: 30px;
 }
 
 .produtos .imagem-produto{
@@ -151,12 +158,12 @@ h2::after, h3::after {
 }
 
 .produtos .descricao-produto {
+    padding: 20px;
     text-align: center;
     background-color: var(--yellow);
 }
 
 .produtos .descricao-produto h3 {
-    padding: 15px 25px 0 25px;
     margin-bottom: 0;
     font-size: 18px;
     letter-spacing: normal;
@@ -164,18 +171,17 @@ h2::after, h3::after {
 
 .produtos p {
     color: var(--black);
-    padding: 10px 20px 20px 20px;
     line-height: 20px;
 }
 
 .call-action {
+    padding-top: 20px;
     text-align: center;
     clear: both;
 }
 
 .call-action p {
-    margin: 20px 0 10px 0;
-    padding: 10px 20px 20px 20px;
+    margin: 20px 0 15px 0;
     line-height: 20px;
 }
 
@@ -184,7 +190,6 @@ h2::after, h3::after {
 }
 
 .portfolio {
-    padding: 30px 0;
     width: 100%;
     background-color: var(--black);
 }
@@ -201,3 +206,30 @@ h2::after, h3::after {
     margin-top: 20px;
 }
 
+.qualidade::before {
+    content: '';
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url("../img/linhas.svg") no-repeat center;
+    position: absolute;
+    top: 200px;
+    right: 162.5px;
+    z-index: -1;
+}
+
+.qualidade p {
+    color: var(--black);
+}
+
+.qualidade h3 {
+    margin-bottom: 20px;
+}
+.qualidade h3::after {
+    margin: 6px auto;
+}
+
+.qualidade .lista-qualidade div {
+    text-align: center;
+    padding-top: 30px;
+}
