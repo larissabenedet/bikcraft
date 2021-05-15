@@ -43,7 +43,7 @@ h2::after, h3::after {
 }
 
 
-section:not(.introducao, .quebra-texto, .sobre-introducao) {
+#padding-section section  {
     padding: 60px 0;
 }
 
@@ -108,6 +108,8 @@ img {
 .header_menu ul li a:hover {
     color: var(--white);
 }
+
+ul li a.menu-ativo {color: var(--white);}
 
 .introducao {
     width: 100%;
@@ -208,6 +210,10 @@ img {
 
 .portfolio img:last-child {
     margin-top: 20px;
+}
+
+.qualidade {
+    padding: 60px 0;
 }
 
 .qualidade::before {
@@ -319,7 +325,7 @@ img {
     padding: 40px 0;
 }
 
-.sobre-introducao h1{
+.introducao-pags h1{
     text-transform: uppercase;
     font-size: 36px;
     line-height: 40px;
@@ -327,7 +333,7 @@ img {
     color: var(--white);
 }
 
-.sobre-introducao h1::after{
+.introducao-pags h1::after{
     content: '';
     display: block;
     width: 60px;
@@ -360,4 +366,142 @@ img {
 
 #sobre section.sobre {
 padding: 60px 0 10px 0;
+}
+
+/* PÁGINA PRODUTOS */
+
+.produtos h2 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: .1em;
+    line-height: 40px;
+}
+
+.produtos h2::after, .produtos h2::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--white);
+    margin: 5px auto;
+}
+
+.produtos-introducao {
+    width: 100%;
+    height: 160px;
+    background: url("../img/bg-produtos.jpg") no-repeat center;
+    background-size: cover;
+    margin-top: 92px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.produtos {
+    padding-top: 60px;
+}
+
+.produtos div {
+    padding: 10px 0;
+}
+
+.produtos .imagem-passeio {
+    background: url("../img/produtos/passeio-1.jpg") no-repeat center;
+    height: 280px;
+    text-align: center;
+    padding: 120px;
+}
+
+.produtos .icon-passeio {
+    background: url("../img/produtos/passeio.svg") no-repeat center;
+    background-color: var(--black);
+    height: 280px;
+}
+
+.produtos .imagem-passeio2 {
+    background: url("../img/produtos/passeio-2.jpg") no-repeat center;
+    background-color: var(--black);
+    height: 280px;
+}
+
+.produtos .texto-info {
+    background-color: var(--black);
+    padding: 0;
+}
+
+.produtos .texto-info p{
+    color: var(--white);
+    padding: 30px 30px 60px 30px;
+    line-height: 25px;
+    font-size: 18px;
+    height: 180px;
+}
+
+div .infos-produto {
+    padding: 0;
+    overflow: auto;
+}
+
+.infos-produto ul li{
+    float: left;
+    background-color: var(--yellow);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    width: 229px;
+    height: 49px;
+    padding: 15px 0;
+}
+
+.infos-produto ul li:nth-child(1), .infos-produto ul li:nth-child(2){
+    margin-bottom: 2px;
+}
+
+.infos-produto ul li:nth-child(even){  /* impares */
+    margin-left: 2px;
+}
+
+/* esporte */
+
+.produtos .imagem-esporte {
+    background: url("../img/produtos/esporte-1.jpg") no-repeat center;
+    height: 280px;
+    text-align: center;
+    padding: 120px;
+}
+
+.produtos .icon-esporte {
+    background: url("../img/produtos/esporte.svg") no-repeat center;
+    background-color: var(--black);
+    height: 280px;
+}
+
+.produtos .imagem-esporte2 {
+    background: url("../img/produtos/esporte-2.jpg") no-repeat center;
+    background-color: var(--black);
+    height: 280px;
+}
+
+/* retro */
+
+.produtos .imagem-retro {
+    background: url("../img/produtos/retro-1.jpg") no-repeat center;
+    height: 280px;
+    text-align: center;
+    padding: 120px;
+}
+
+.produtos .icon-retro {
+    background: url("../img/produtos/retro.svg") no-repeat center;
+    background-color: var(--black);
+    height: 280px;
+}
+
+.produtos .imagem-retro2 {
+    background: url("../img/produtos/retro-2.jpg") no-repeat center;
+    background-color: var(--black);
+    height: 280px;
 }
