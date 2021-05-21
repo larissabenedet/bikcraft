@@ -50,6 +50,7 @@ h2::after, h3::after {
 img {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 .btn {
@@ -520,10 +521,10 @@ div .infos-produto {
 .orcamento h2::after {
     background-color: var(--yellow);
 }
-.form {
+#produtos .form {
     padding-right: 60px;
 }
-.form label {
+#produtos .form label {
     display: block;
     color: var(--white);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -531,7 +532,7 @@ div .infos-produto {
     line-height: 25px;
     margin-bottom: 5px;
 }
-.form input {
+#produtos .form input {
     display: block;
     width: 100%;
     margin-bottom: 10px;
@@ -543,7 +544,7 @@ div .infos-produto {
     font-size: 14px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.form textarea {
+#produtos .form textarea {
     display: block;
     height: 120px;
     width: 100%;
@@ -557,18 +558,18 @@ div .infos-produto {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.form button.btn {
+#produtos .form button.btn {
     padding: 7px 40px;
     margin-top: 10px;
     cursor: pointer;
     clear: both;
 }
 
-.orcamento-dados {
+#produtos .orcamento-dados {
     color: var(--white);
 }
 
-.orcamento-dados h3{
+#produtos .orcamento-dados h3{
     margin: 0;
     font-size: 18px;
     line-height: 25px;
@@ -576,33 +577,33 @@ div .infos-produto {
     font-weight: bold;
 }
 
-.orcamento-dados span{
+#produtos .orcamento-dados span{
     display: block;
     font-size: 18px;
     line-height: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.orcamento-dados .dados-email {
-    margin-bottom: 40px;
+#produtos .orcamento-dados span:nth-of-type(even) {
+    margin-bottom: 30px;
 }
 
-.orcamento-dados ul {
+#produtos .orcamento-dados ul {
     padding-right: 60px;
 }
 
-.orcamento-dados ul li {
+#produtos .orcamento-dados ul li {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
     padding: 10px 15px;
 }
 
-.orcamento-dados ul li:nth-child(odd) {
+#produtos .orcamento-dados ul li:nth-child(odd) {
     background-color: #1d1d1d;
 }
 
 
-.orcamento-dados p {
+#produtos .orcamento-dados p {
     margin: 8px 0;
 }
 
@@ -642,4 +643,116 @@ div .infos-produto {
     font-size: 18px;
     float: right;
     font-style: normal;
+}
+
+/* contato */
+
+.contato-introducao {
+    width: 100%;
+    height: 160px;
+    background: url("../img/bg-contato.jpg") no-repeat center;
+    background-size: cover;
+    margin-top: 92px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contato {
+    padding: 40px 0;
+}
+
+#contato-form {
+    padding-right: 60px;
+}
+
+#contato-form label{
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 5px;
+}
+
+#contato-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 4px solid var(--yellow);
+    background-color: transparent;
+    padding: 7px 10px;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#contato-form textarea {
+    display: block;
+    height: 120px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 4px solid var(--yellow);
+    background-color: transparent;
+    padding: 7px 10px;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#contato-form button.btn {
+    padding: 7px 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    clear: both;
+}
+
+#contato .contato-dados {
+    color: var(--black);
+}
+
+#contato .contato-dados h3{
+    margin: 0;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+#contato .contato-dados h3::after{
+    display: none;
+}
+
+#contato .contato-dados span{ 
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#contato .contato-dados span:nth-of-type(even) { 
+    margin-bottom: 30px;
+}
+
+#contato .contato-dados p {
+    margin: 8px 0;
+}
+
+#contato .contato-dados ul {
+    margin-top: 10px;
+}
+#contato .contato-dados ul li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 20px;
+}
+#contato .contato-dados ul li a{
+    border: 3px solid var(--yellow);
+    display: block;
+    padding: 10px;
+}
+#contato .contato-dados ul li a:hover{
+    border-color: var(--black);
+}
+
+#contato .contato-mapa {
+    margin-bottom: 60px;
 }
