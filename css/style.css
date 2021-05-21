@@ -54,7 +54,7 @@ img {
 }
 
 .btn {
-    padding: 12px 31px;
+    padding: 10px 31px;
     background-color: transparent;
     border: solid 4px var(--yellow);
     text-transform: uppercase;
@@ -132,7 +132,7 @@ ul li a.menu-ativo {color: var(--white);}
 
 .quote-externo {
     max-width: 262px;
-    margin: 12px auto;
+    margin: 10px auto;
     font-style: italic;
 }
 
@@ -142,7 +142,7 @@ ul li a.menu-ativo {color: var(--white);}
     width: 60px;
     height: 3px;
     background: var(--white);
-    margin: 14.5px auto;
+    margin: 14px auto;
 }
 
 .quote-externo cite {
@@ -155,7 +155,7 @@ ul li a.menu-ativo {color: var(--white);}
     font-style: normal;
     color: var(--white);
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .produtos .imagem-produto{
