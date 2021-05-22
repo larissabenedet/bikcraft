@@ -1,6 +1,29 @@
 /* Tablets */
 @media only screen and (min-width: 788px) and (max-width: 979px) {
+  .qualidade::before {
+    right: 66px;
+}
 
+.footer .footer-redes ul li a{
+  padding: 6px;
+}
+.footer .footer-redes ul li a img{
+  width: 26px;
+  height: 26px;
+}
+
+.produtos .imagem-passeio, .produtos .imagem-esporte, .produtos .imagem-retro {
+  padding: 110px;
+}
+
+.produtos .texto-info p {
+  padding: 20px 30px;
+  font-size: 14px;
+}
+
+.infos-produto ul li {
+  width: 181px;
+}
 }
 
 /* Smartphone */
@@ -14,15 +37,76 @@
   .header_menu ul li a {border: 4px solid black; width: 136px; display: block;
   float: left;}
   .header_menu ul li a:hover {border-color: white;}
-
-    /* banner introducao */
-  .introducao {margin-top: 0; padding: 10px 0; width: 100%;
+  ul li a.menu-ativo {border-color: white;}
+  
+  /* banner introducao */
+  .introducao {margin-top: 0; padding: 40px 0; width: 100%;
     height: 380px;
     background: url("../img/bg-responsivo.jpg") no-repeat center;
     background-size: cover;}
-  .introducao h1{margin-top: 0;}
+  .introducao h1{margin-top: 0; font-size: 36px;}
   .quote-externo p::before, .quote-externo p::after {
     margin: 10px auto;}
   .quote-externo cite {margin-bottom: 15px;}
+
+  .produtos div {
+    padding: 0;
+  }
+  #padding-section section {
+    padding: 30px 0;
+  }
+  #produtos-home {
+    margin-bottom: 20px;
+  }
+
+  .qualidade::before {
+    display: none;
+}
+  .call-action {
+    padding-top: 10px;
+}
+
+.sobre-introducao, .portfolio-introducao, .produtos-introducao, .contato-introducao {
+  margin-top: 0px;
+}
+
+.sobre div:first-child {
+  padding-right: 0;
+  padding-bottom: 10px;
+}
+
+.sobre p{
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.sobre ul{
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.produtos .imagem-passeio, .produtos .imagem-esporte, .produtos .imagem-retro {
+  padding: 110px 0px;
+}
+
+.produtos .texto-info p {
+  padding: 20px 30px;
+  height: auto;
+  font-size: 14px;
+}
+
+.infos-produto ul li {
+  font-size: 14px;
+  width: 149px;
+}
+
+#produtos .form, #produtos .orcamento-dados ul {
+  padding-right: 0;
+}
+
+#contato-form {
+  padding-right: 0;
+  margin-bottom: 40px;
+}
 
 }
