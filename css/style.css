@@ -804,3 +804,17 @@ div .infos-produto {
     transform: none;
     transition: transform .8s, opacity .8s;
   }
+
+  .nao-aparece {
+      visibility: hidden;
+      position: absolute;
+      height: 0;
+  }
+
+  #form-sucesso {
+      color: #31aa38;
+  }
+
+  #form-erro {
+      color: #f645f0;
+  }
