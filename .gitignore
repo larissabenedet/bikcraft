@@ -1,2 +1,3 @@
-/enviar-sendgrid.php
-*.php
+.php
+enviar-sendgrid.php
+/*.php
